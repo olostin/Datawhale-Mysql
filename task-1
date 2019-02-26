@@ -1,1 +1,60 @@
+ #####  
+
+#### 1.软件安装及服务器设置
+
+* 在mac下安装mysql-8.0.15-macos10.14-x86_64，过程中输入数据库的root密码；
+
+* 在系统偏好设置启动或关闭mysql；
+
+* /usr/local/mysql/bin/mysql -u root -p 输入密码后进去mysql命令行界面；
+
+* 创建数据库，使用数据库，删除数据库，查看数据库；
+
+* ```
+  create database Test; (Query OK, 1 row affected (0.01 sec))
+  use Test; (Database changed)
+  drop database Test; (Query OK, 0 rows affected (0.01 sec))
+  ```
+
+* 完成安装。
+
+#### 2.数据库基础知识
+
+* 数据库定义
+
+  A database is an organized collection of data, generally stored and accessed electronically from a computer system. Where databases are more complex they are often developed using formal design and modeling techniques.
+
+* 关系型数据库
+
+  A relational database is a digital database based on the relational model of data, as proposed by E. F. Codd in 1970.A software system used to maintain relational databases is a relational database management system (RDBMS). Virtually all relational database systems use SQL (Structured Query Language) for querying and maintaining the database.
+
+* 二维表
+
+  A table is a collection of related data held in a table format within a database. It consists of columns, and rows.
+
+* 行
+
+  In the context of a relational database, a row—also called a tuple—represents a single, implicitly structured data item in a table. In simple terms, a database table can be thought of as consisting of rows and columns.Each row in a table represents a set of related data, and every row in the table has the same structure.
+
+* 列
+
+  In a relational database, a column is a set of data values of a particular simple type, one value for each row of the database.A column may contain text values, numbers, or even pointers to files in the operating system.Some relational database systems allow columns to contain more complex data types; whole documents, images or even video clips are examples.A column can also be called an attribute.
+
+* 主键
+
+  In the relational model of databases, a primary key is a specific choice of a minimal set of attributes (columns) that uniquely specify a tuple (row) in a relation (table).Informally, a primary key is "which attributes identify a record", and in simple cases are simply a single attribute: a unique id. More formally, a primary key is a choice of candidate key (a minimal superkey); any other candidate key is an alternate key.
+
+* 外键
+
+  In the context of relational databases, a foreign key is a field (or collection of fields) in one table that uniquely identifies a row of another table or the same table. In simpler words, the foreign key is defined in a second table, but it refers to the primary key or a unique key in the first table. For example, a table called Employees has a primary key called employee_id. Another table called Employee Details has a foreign key which references employee_id in order to uniquely identify the relationship between the two tables.
+
+#### 3.MySQL数据库管理系统
+
+* 视图
+
+  In a database, a view is the result set of a stored query on the data, which the database users can query just as they would in a persistent database collection object.
+
+* 存储过程
+
+  A stored procedure (also termed proc, storp, sproc, StoPro, StoredProc, StoreProc, sp, or SP) is a subroutine available to applications that access a relational database management system (RDBMS). Such procedures are stored in the database data dictionary.
 
